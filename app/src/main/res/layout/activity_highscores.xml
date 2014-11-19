@@ -1,0 +1,79 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="example.axel.bs_projekt.Highscores_Activity">
+
+    <ViewFlipper
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="450dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginLeft="20dp"
+        android:id="@+id/flippper">
+
+            <RelativeLayout
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent">
+
+                <TextView
+                    android:layout_width="fill_parent"
+                    android:layout_height="fill_parent"
+                    android:id="@+id/tv_highscore_alle"
+                    android:text="ALLE"
+                    android:gravity="center_vertical|center_horizontal"
+                    android:textSize="30dp" />
+
+                </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent">
+
+            <TextView
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:id="@+id/tv_highscore_user"
+                android:text="USER"
+                android:gravity="center_vertical|center_horizontal"
+                android:textSize="30dp" />
+
+        </RelativeLayout>
+
+
+        </ViewFlipper>
+
+    <TextView
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_marginTop="80dp"
+        android:layout_marginBottom="400dp"
+        android:layout_marginLeft="100dp"
+        android:layout_marginRight="160dp"
+        android:text="Spieler"
+        android:textSize="20dp"
+        android:gravity="center_vertical|center_horizontal" />
+
+    <TextView
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_marginTop="80dp"
+        android:layout_marginBottom="400dp"
+        android:layout_marginLeft="220dp"
+        android:layout_marginRight="20dp"
+        android:text="Punkte"
+        android:textSize="20dp"
+        android:gravity="center_vertical|center_horizontal" />
+
+    <ListView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/lv_highscore"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginTop="130dp"
+        android:headerDividersEnabled="false" />
+
+</RelativeLayout>

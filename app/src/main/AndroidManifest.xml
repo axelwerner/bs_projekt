@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="example.axel.bs_projekt" >
+
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/ic_launcher"
+        android:label="@string/app_name"
+        android:theme="@style/AppTheme" >
+        <activity
+            android:name=".MyActivity"
+            android:label="@string/app_name"
+            android:screenOrientation="portrait" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+
+        </activity>
+        <activity
+            android:name=".HomeView"
+            android:label="@string/title_activity_game_view"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name=".Registration_Activity"
+            android:label="@string/title_activity_registration_"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name=".Highscores_Activity"
+            android:label="@string/title_activity_highscores_"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name=".Game_View2"
+            android:label="@string/title_activity_game__view2">
+        </activity>
+    </application>
+
+</manifest>

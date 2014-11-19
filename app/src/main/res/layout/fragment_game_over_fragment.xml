@@ -1,0 +1,59 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.aw.punkte.Game_over_fragment">
+
+    <RelativeLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:context="com.example.aw.punkte.Game_over_fragment"
+        android:background="#FFFFFF">
+
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:text="@string/hello_blank_fragment"
+            android:id="@+id/tv_test"
+            android:layout_gravity="center"
+            android:textSize="20dp"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_marginTop="300dp"
+            android:layout_marginRight="75dp"
+            android:layout_marginLeft="75dp"
+            android:layout_marginBottom="200dp"
+            android:gravity="center_horizontal"
+            android:textStyle="bold"
+            android:typeface="sans" />
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/menue"
+            android:id="@+id/b_menue"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="86dp"
+            android:layout_marginLeft="75dp"
+            android:layout_marginRight="75dp" />
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/try_again"
+            android:id="@+id/b_try_again"
+            android:layout_alignParentBottom="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginBottom="75dp"
+            android:layout_marginRight="75dp"
+            android:layout_marginLeft="75dp" />
+    </RelativeLayout>
+
+    <!-- TODO: Update blank fragment layout -->
+
+</RelativeLayout>

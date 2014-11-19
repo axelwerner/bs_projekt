@@ -1,0 +1,37 @@
+<LinearLayout
+    android:orientation="vertical"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:background="@drawable/background_android_flash">
+
+    <EditText
+        android:layout_width="288dp"
+        android:layout_height="wrap_content"
+        android:id="@+id/ed_reg_user"
+        android:layout_gravity="center_horizontal"
+        android:hint="@string/hint_text_user"
+        android:layout_marginTop="100dp" />
+
+    <EditText
+        android:layout_width="288dp"
+        android:layout_height="wrap_content"
+        android:id="@+id/ed_reg_pass"
+        android:layout_gravity="center_horizontal"
+        android:hint="@string/hint_text_pass" />
+
+    <EditText
+        android:layout_width="288dp"
+        android:layout_height="wrap_content"
+        android:id="@+id/ed_reg_pass2"
+        android:layout_gravity="center_horizontal"
+        android:hint="@string/hint_text_pass_2" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/button_reg_name"
+        android:id="@+id/b_conf_registration"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="50dp" />
+</LinearLayout>
