@@ -3,6 +3,15 @@
     package="example.axel.bs_projekt" >
 
     <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.CAMERA" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.BLUETOOTH" />
+    <uses-permission android:name="android.permission.BLUETOOTH_ADMIN" />
+    <uses-permission android:name="android.permission.BLUETOOTH_PRIVILEGED" />
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+
+    <uses-feature android:name="android.hardware.camera" />
+    <uses-feature android:name="android.hardware.camera.autofocus" />
 
     <application
         android:allowBackup="true"
@@ -10,7 +19,7 @@
         android:label="@string/app_name"
         android:theme="@style/AppTheme" >
         <activity
-            android:name=".MyActivity"
+            android:name="example.axel.bs_projekt.Login"
             android:label="@string/app_name"
             android:screenOrientation="portrait" >
             <intent-filter>
@@ -18,26 +27,39 @@
 
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
-
         </activity>
         <activity
-            android:name=".HomeView"
+            android:name="example.axel.bs_projekt.MyActivity"
+            android:label="@string/app_name"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="example.axel.bs_projekt.HomeView"
             android:label="@string/title_activity_game_view"
             android:screenOrientation="portrait" >
         </activity>
         <activity
-            android:name=".Registration_Activity"
+            android:name="example.axel.bs_projekt.Registration_Activity"
             android:label="@string/title_activity_registration_"
             android:screenOrientation="portrait" >
         </activity>
         <activity
-            android:name=".Highscores_Activity"
+            android:name="example.axel.bs_projekt.Highscores_Activity"
             android:label="@string/title_activity_highscores_"
             android:screenOrientation="portrait" >
         </activity>
         <activity
-            android:name=".Game_View2"
-            android:label="@string/title_activity_game__view2">
+            android:name="example.axel.bs_projekt.User_Profil"
+            android:label="@string/title_activity_user__profil" >
+        </activity>
+        <activity
+            android:name="example.axel.bs_projekt.BackgroundActivity"
+            android:label="@string/title_activity_background"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="example.axel.bs_projekt.BluetoothList"
+            android:label="@string/title_activity_bluetooth_list" >
         </activity>
     </application>
 

@@ -2,52 +2,35 @@ package example.axel.bs_projekt;
 
 import android.annotation.TargetApi;
 import android.app.Activity;
-import android.app.ListActivity;
-import android.content.Context;
+import android.content.Intent;
 import android.database.Cursor;
 import android.database.sqlite.SQLiteDatabase;
-import android.graphics.Color;
 import android.os.Build;
 import android.os.Bundle;
-import android.os.Handler;
-import android.text.method.Touch;
-import android.view.Display;
 import android.view.GestureDetector;
-import android.view.KeyEvent;
 import android.view.MotionEvent;
-import android.view.Surface;
 import android.view.View;
-import android.view.ViewGroup;
-import android.view.WindowManager;
-import android.view.animation.AccelerateInterpolator;
 import android.view.animation.Animation;
 import android.view.animation.AnimationUtils;
 import android.widget.AdapterView;
-import android.widget.ArrayAdapter;
 import android.widget.CursorAdapter;
 import android.widget.ListView;
-import android.widget.SimpleCursorAdapter;
-import android.widget.TextView;
-import android.widget.Toast;
 import android.widget.ViewFlipper;
 
-import org.w3c.dom.Text;
-
-import java.security.Key;
 import java.util.ArrayList;
 
 
 public class Highscores_Activity extends Activity implements AdapterView.OnItemClickListener, GestureDetector.OnGestureListener {
 
-    SQLiteDatabase db;
-    SQLiteManager sqLiteManager;
-    ArrayList<String> highscore_liste;
-    ListView lv_highscore;
-    String[] anzeigeSpalten;
-    GestureDetector gestureDetector;
-    ViewFlipper flipper;
+    private SQLiteDatabase db;
+    private SQLiteManager sqLiteManager;
+    private ArrayList<String> highscore_liste;
+    private ListView lv_highscore;
+    private String[] anzeigeSpalten;
+    private GestureDetector gestureDetector;
+    private ViewFlipper flipper;
 
-    Singleton singleton;
+    private Singleton singleton;
 
     Animation slide_out_left, slide_in_left, slide_out_right, slide_in_right;
 
@@ -111,7 +94,6 @@ public class Highscores_Activity extends Activity implements AdapterView.OnItemC
             } else {
                 createListViewAll();
             }
-            Toast.makeText(this, "" + flipper.getDisplayedChild() + "", Toast.LENGTH_LONG).show();
             flipper.showNext();
 
         } else if ((e2.getX() - e1.getX()) > sensitvity) {
@@ -180,6 +162,17 @@ public class Highscores_Activity extends Activity implements AdapterView.OnItemC
         }
 
         lv_highscore.setAdapter(adapter) ;
+    }
+
+
+    @Override
+    public void onBackPressed() {
+        super.onBackPressed();
+
+        Intent intent = new Intent(Highscores_Activity.this, HomeView.class);
+        startActivity(intent);
+        overridePendingTransition(R.anim.slide_in_left, R.anim.slide_out_right);
+        finish();
     }
 
     @Override

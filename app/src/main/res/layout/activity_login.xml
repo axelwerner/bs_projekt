@@ -4,49 +4,46 @@
     android:layout_height="fill_parent"
     xmlns:android="http://schemas.android.com/apk/res/android"
     android:background="@drawable/sky_background"
-    android:id="@+id/linearlayout_registration">
+    android:id="@+id/linearlayout_login">
 
     <EditText
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:id="@+id/ed_reg_user"
+        android:id="@+id/et_user"
         android:layout_gravity="center_horizontal"
         android:hint="@string/hint_text_user"
-        android:layout_marginTop="100dp" />
+        android:layout_marginTop="120dp"/>
 
     <EditText
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:id="@+id/ed_reg_pass"
+        android:id="@+id/et_pass"
         android:password="true"
         android:fontFamily="arial"
         android:layout_gravity="center_horizontal"
         android:hint="@string/hint_text_pass" />
 
-    <EditText
+    <Button
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:id="@+id/ed_reg_pass2"
-        android:password="true"
-        android:fontFamily="arial"
+        android:text="@string/button_name"
+        android:background="@drawable/cloud_image_button"
+        android:textColor="@color/black"
+        android:id="@+id/b_einloggen"
         android:layout_gravity="center_horizontal"
-        android:hint="@string/hint_text_pass_2" />
-
-    <EditText
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:id="@+id/ed_email"
-        android:layout_gravity="center_horizontal"
-        android:hint="@string/hint_text_email" />
+        android:layout_marginTop="20dp"
+        android:layout_marginBottom="200dp"/>
 
     <Button
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="@string/button_reg_name"
-        android:id="@+id/b_conf_registration"
         android:background="@drawable/cloud_image_button"
+        android:text="@string/button_reg_name"
         android:textColor="@color/black"
         android:layout_gravity="center_horizontal"
-        android:layout_marginTop="5dp"
-        android:layout_marginBottom="140dp"/>
+        android:id="@+id/b_registration"
+        android:layout_marginTop="-150dp"
+        android:layout_marginBottom="50dp"/>
+
+
 </LinearLayout>

@@ -1,0 +1,65 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="example.axel.bs_projekt.FragmentLogin">
+
+    <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:context=".MyActivity"
+        android:id="@+id/loginLayout">
+
+        <EditText
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/et_user"
+            android:layout_marginTop="130dp"
+            android:layout_marginBottom="350dp"
+            android:layout_centerHorizontal="true"
+            android:hint="@string/hint_text_user" />
+
+        <EditText
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/et_pass"
+            android:password="true"
+            android:fontFamily="arial"
+            android:layout_marginTop="180dp"
+            android:layout_marginBottom="305dp"
+            android:layout_centerHorizontal="true"
+            android:hint="@string/hint_text_pass" />
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="215dp"
+            android:layout_marginLeft="75dp"
+            android:layout_marginRight="75dp"
+            android:layout_marginBottom="215dp"
+            android:text="@string/button_name"
+            android:background="@drawable/cloud_image_button"
+            android:textColor="@color/black"
+            android:id="@+id/b_einloggen"
+            android:layout_centerHorizontal="true" />
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="350dp"
+            android:layout_marginLeft="40dp"
+            android:layout_marginRight="40dp"
+            android:layout_marginBottom="50dp"
+            android:background="@drawable/cloud_image_button"
+            android:text="@string/button_reg_name"
+            android:textColor="@color/black"
+            android:layout_centerHorizontal="true"
+            android:id="@+id/b_registration" />
+
+
+    </RelativeLayout>
+
+
+
+</FrameLayout>

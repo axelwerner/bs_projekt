@@ -1,10 +1,8 @@
 package example.axel.bs_projekt;
 
-import android.app.Activity;
-import android.content.Intent;
-import android.net.Uri;
-import android.os.Bundle;
 import android.app.Fragment;
+import android.content.Intent;
+import android.os.Bundle;
 import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.View;
@@ -16,10 +14,10 @@ import android.widget.TextView;
 public class Game_over_fragment extends Fragment implements View.OnClickListener {
 
 
-    TextView tv_text;
-    Bundle bundle;
-    Button button_try_again;
-    Button button_menue;
+    private TextView tv_text;
+    private Bundle bundle;
+    private Button button_try_again;
+    private Button button_menue;
 
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
@@ -52,7 +50,7 @@ public class Game_over_fragment extends Fragment implements View.OnClickListener
 
         if(v == button_try_again) {
 
-            Intent intent = new Intent(getActivity(), Game_View2.class);
+            Intent intent = new Intent(getActivity(), MyActivity.class);
             startActivity(intent);
 
         }

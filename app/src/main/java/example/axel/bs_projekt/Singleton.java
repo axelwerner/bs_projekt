@@ -1,7 +1,5 @@
 package example.axel.bs_projekt;
 
-import android.test.SingleLaunchActivityTestCase;
-
 /**
  * Created by Axel on 14.11.2014.
  */
@@ -9,6 +7,10 @@ public class Singleton {
 
     int id_user;
     String name_user;
+    String password;
+    String email;
+    byte[] image_profile;
+    int score;
 
     private static Singleton singleton = null;
     private Singleton () {}
@@ -21,6 +23,13 @@ public class Singleton {
         return singleton;
     }
 
+    public int getScore() {
+        return score;
+    }
+
+    public void setScore(int score) {
+        this.score = score;
+    }
 
     public int getId_user() {
         return id_user;
@@ -37,4 +46,30 @@ public class Singleton {
     public void setName_user(String name_user) {
         this.name_user = name_user;
     }
+
+    public String getPassword() {
+        return password;
+    }
+
+    public void setPassword(String password) {
+        this.password = password;
+    }
+
+    public String getEmail() {
+        return email;
+    }
+
+    public void setEmail(String email) {
+        this.email = email;
+    }
+
+    public byte[] getImage_profile() {
+        return image_profile;
+    }
+
+    public void setImage_profile(byte[] image_profile) {
+        this.image_profile = image_profile;
+    }
+
+
 }

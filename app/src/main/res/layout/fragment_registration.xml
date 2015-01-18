@@ -1,0 +1,60 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="example.axel.bs_projekt.FragmentRegistration">
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:background="@color/transparent"
+        android:id="@+id/registrationLayout">
+
+        <EditText
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/ed_reg_user"
+            android:layout_gravity="center_horizontal"
+            android:hint="@string/hint_text_user"
+            android:layout_marginTop="100dp" />
+
+        <EditText
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/ed_reg_pass"
+            android:password="true"
+            android:fontFamily="arial"
+            android:layout_gravity="center_horizontal"
+            android:hint="@string/hint_text_pass" />
+
+        <EditText
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/ed_reg_pass2"
+            android:password="true"
+            android:fontFamily="arial"
+            android:layout_gravity="center_horizontal"
+            android:hint="@string/hint_text_pass_2" />
+
+        <EditText
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/ed_email"
+            android:layout_gravity="center_horizontal"
+            android:hint="@string/hint_text_email" />
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/button_reg_name"
+            android:id="@+id/b_conf_registration"
+            android:background="@drawable/cloud_image_button"
+            android:textColor="@color/black"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="5dp"
+            android:layout_marginBottom="140dp"/>
+    </LinearLayout>
+
+</FrameLayout>
