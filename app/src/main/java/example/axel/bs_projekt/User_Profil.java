@@ -197,11 +197,15 @@ public class User_Profil extends Activity implements View.OnClickListener {
 
                 Bitmap photo = MediaStore.Images.Media.getBitmap(getApplicationContext().getContentResolver(), capturedImageUri);
 
+<<<<<<< Updated upstream
 
+=======
+>>>>>>> Stashed changes
                 ByteArrayOutputStream out = new ByteArrayOutputStream();
 
                 photo.compress(Bitmap.CompressFormat.PNG, 100, out);
 
+<<<<<<< Updated upstream
                 byte[] buffer=out.toByteArray();
 
                 Bitmap b1= BitmapFactory.decodeByteArray(buffer, 0, buffer.length);
@@ -209,6 +213,17 @@ public class User_Profil extends Activity implements View.OnClickListener {
                 profile_picture.setImageBitmap(b1);
 
                 sqLiteManager.saveImageProcess(db, singleton.getId_user(), buffer);
+=======
+                profile_picture.setImageBitmap(photo);
+
+                //byte[] buffer=out.toByteArray();
+
+                //Bitmap b1= BitmapFactory.decodeByteArray(buffer, 0, buffer.length);
+
+                //profile_picture.setImageBitmap(b1);
+
+                //sqLiteManager.saveImageProcess(db, singleton.getId_user(), buffer);
+>>>>>>> Stashed changes
 
             } catch (Exception e) {
                 e.printStackTrace();

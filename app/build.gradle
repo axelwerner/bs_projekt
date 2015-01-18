@@ -1,3 +1,4 @@
+<<<<<<< Updated upstream
 apply plugin: 'com.android.application'
 
 android {
@@ -23,3 +24,30 @@ android {
 dependencies {
     compile fileTree(include: ['*.jar'], dir: 'libs')
 }
+=======
+apply plugin: 'com.android.application'
+
+android {
+    compileSdkVersion 19
+    buildToolsVersion '19.1.0'
+
+    defaultConfig {
+        applicationId "example.axel.bs_projekt"
+        minSdkVersion 15
+        targetSdkVersion 19
+        versionCode 1
+        versionName "1.0"
+    }
+    buildTypes {
+        release {
+            runProguard false
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+        }
+    }
+    sourceSets { main { assets.srcDirs = ['src/main/assets', 'src/main/assets/'] } }
+}
+
+dependencies {
+    compile fileTree(include: ['*.jar'], dir: 'libs')
+}
+>>>>>>> Stashed changes

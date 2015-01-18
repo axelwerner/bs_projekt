@@ -4,6 +4,7 @@ import android.app.Activity;
 import android.os.Bundle;
 import android.view.Menu;
 import android.widget.TextView;
+<<<<<<< Updated upstream
 
 
 public class MyActivity extends Activity {
@@ -18,21 +19,48 @@ public class MyActivity extends Activity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_my);
+=======
 
-        singleton = Singleton.GetInstance();
+>>>>>>> Stashed changes
 
+public class MyActivity extends Activity {
+
+<<<<<<< Updated upstream
+=======
+    private GameView paintSurface;
+    private GameEngine gameEngine;
+    private TextView tv_punkte_zaehler;
+
+
+    @Override
+    protected void onCreate(Bundle savedInstanceState) {
+        super.onCreate(savedInstanceState);
+        setContentView(R.layout.activity_my);
+
+>>>>>>> Stashed changes
 
         //Get reference to the GameView
         paintSurface = (GameView) findViewById(R.id.paintSurface);
 
+<<<<<<< Updated upstream
         tv_punkte_zaehler = (TextView) findViewById(R.id.tv_punkte_zaehler);
         tv_punkte_zaehler.setText("" + singleton.getScore());
         //gameEngine.score(tv_punkte_zaehler = (TextView) findViewById(R.id.tv_punkte_zaehler));
 
         //Set OnTouchListener
         paintSurface.setOnTouchListener(paintSurface);
+=======
 
+        //gameEngine.score(tv_punkte_zaehler = (TextView) findViewById(R.id.tv_punkte_zaehler));
+>>>>>>> Stashed changes
 
+        //Set OnTouchListener
+        paintSurface.setOnTouchListener(paintSurface);
+
+<<<<<<< Updated upstream
+=======
+
+>>>>>>> Stashed changes
 
     }
 

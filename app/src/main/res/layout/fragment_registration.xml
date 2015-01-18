@@ -25,7 +25,10 @@
             android:layout_height="wrap_content"
             android:id="@+id/ed_reg_pass"
             android:password="true"
+<<<<<<< Updated upstream
             android:fontFamily="arial"
+=======
+>>>>>>> Stashed changes
             android:layout_gravity="center_horizontal"
             android:hint="@string/hint_text_pass" />
 
@@ -34,7 +37,10 @@
             android:layout_height="wrap_content"
             android:id="@+id/ed_reg_pass2"
             android:password="true"
+<<<<<<< Updated upstream
             android:fontFamily="arial"
+=======
+>>>>>>> Stashed changes
             android:layout_gravity="center_horizontal"
             android:hint="@string/hint_text_pass_2" />
 
