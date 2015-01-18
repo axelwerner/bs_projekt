@@ -4,6 +4,12 @@ import android.content.res.Resources;
 import android.graphics.Bitmap;
 import android.graphics.BitmapFactory;
 
+
+//ASDASD
+//ASDASD
+//ASDASD
+
+
 /**
  * Created by luke on 29.11.14.
  */
