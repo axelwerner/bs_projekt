@@ -5,6 +5,7 @@ import android.app.FragmentManager;
 import android.app.FragmentTransaction;
 import android.os.Bundle;
 
+<<<<<<< Updated upstream
 // TEST TEST TEST TEST TEST
 // TEST TEST TEST TEST TEST
 // TEST TEST TEST TEST TEST
@@ -12,6 +13,8 @@ import android.os.Bundle;
 // TEST TEST TEST TEST TEST
 
 
+=======
+>>>>>>> Stashed changes
 
 public class BackgroundActivity extends Activity {
 

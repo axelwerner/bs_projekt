@@ -16,6 +16,10 @@ import android.view.SurfaceHolder;
 import android.view.SurfaceView;
 import android.view.View;
 import android.view.WindowManager;
+<<<<<<< Updated upstream
+=======
+import android.widget.TextView;
+>>>>>>> Stashed changes
 
 /**
  * Created by luke on 29.11.14.
@@ -34,6 +38,10 @@ public class GameView extends SurfaceView implements Runnable, View.OnTouchListe
     private CreateRandom random;
     private int touchY;
 
+<<<<<<< Updated upstream
+=======
+
+>>>>>>> Stashed changes
     public GameView(Context context, AttributeSet attrs) {
         super(context, attrs);
 
@@ -74,8 +82,11 @@ public class GameView extends SurfaceView implements Runnable, View.OnTouchListe
 
         // initialize sensor
         this.touchY = guy.getGuyY();
+<<<<<<< Updated upstream
 
 
+=======
+>>>>>>> Stashed changes
     }
 
     public void resume(){
@@ -126,6 +137,10 @@ public class GameView extends SurfaceView implements Runnable, View.OnTouchListe
                 canvas.drawBitmap(brick.getBrick(a), brick.getBrickY(a), brick.getBrickX(a), new Paint());
             }
 
+<<<<<<< Updated upstream
+=======
+
+>>>>>>> Stashed changes
             // Draw guy
             canvas.drawBitmap(guy.getGuy(), guy.getGuyY(), guy.getGuyX(), new Paint());
 

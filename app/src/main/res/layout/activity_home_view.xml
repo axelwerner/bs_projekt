@@ -1,3 +1,4 @@
+<<<<<<< Updated upstream
 <RelativeLayout
     android:orientation="vertical"
     android:layout_width="fill_parent"
@@ -107,4 +108,115 @@
         </LinearLayout>
     </SlidingDrawer>
 
+=======
+<RelativeLayout
+    android:orientation="vertical"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:baselineAligned="false"
+    android:id="@+id/linear_layout_home">
+
+    <Button
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:id="@+id/b_user_name"
+        android:text="Text"
+        android:background="@color/transparent"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="30dp"
+        android:layout_marginBottom="430dp"
+        android:textSize="30dip"
+        android:layout_centerHorizontal="true"/>
+
+    <Button
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:text="@string/button_new_game"
+        android:background="@color/transparent"
+        android:id="@+id/b_newgame"
+        android:layout_marginTop="150dp"
+        android:layout_marginLeft="100dp"
+        android:layout_marginRight="100dp"
+        android:layout_marginBottom="310dp"
+        android:layout_gravity="center_horizontal" />
+
+    <Button
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:text="Multiplayer"
+        android:background="@color/transparent"
+        android:layout_marginTop="210dp"
+        android:layout_marginLeft="100dp"
+        android:layout_marginRight="100dp"
+        android:layout_marginBottom="250dp"
+        android:id="@+id/b_multiplayer"
+        android:layout_gravity="center_horizontal" />
+
+    <Button
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:text="@string/button_top_score"
+        android:background="@color/transparent"
+        android:layout_marginTop="270dp"
+        android:layout_marginLeft="100dp"
+        android:layout_marginRight="100dp"
+        android:layout_marginBottom="190dp"
+        android:id="@+id/b_highscore"
+        android:layout_gravity="center_horizontal" />
+
+    <SlidingDrawer
+        android:layout_width="wrap_content"
+        android:id="@+id/SlidingDrawer"
+        android:handle="@+id/slideButton"
+        android:content="@+id/contentLayout"
+        android:padding="10dip"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <TextView android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/slideButton"
+            android:textSize="20dp"
+            android:text="Einstellungen">
+        </TextView>
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:id="@+id/contentLayout"
+            android:orientation="vertical"
+            android:gravity="center"
+            android:padding="10dip"
+            android:layout_height="wrap_content"
+            android:background="@color/red">
+            <Button
+                android:id="@+id/Button01"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="2dp"
+                android:text="Option1">
+            </Button>
+            <Button
+                android:id="@+id/Button02"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="2dp"
+                android:text="Option2">
+
+                </Button>
+            <Button android:id="@+id/Button03"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="2dp"
+                android:text="Option3">
+            </Button>
+            <Button android:id="@+id/Button04"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="2dp"
+                android:text="Option4">
+            </Button>
+        </LinearLayout>
+    </SlidingDrawer>
+
+>>>>>>> Stashed changes
 </RelativeLayout>

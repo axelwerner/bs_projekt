@@ -17,7 +17,10 @@ public class GameEngine {
     private Guy guy;
     private Brick brick;
     private TextView punkte_anzahl;
+<<<<<<< Updated upstream
     private Singleton singleton;
+=======
+>>>>>>> Stashed changes
 
 
 
@@ -54,8 +57,11 @@ public class GameEngine {
 
                 // move guy to top(jump)
                 guyX = guyX - moveSpeed;
+<<<<<<< Updated upstream
 
 
+=======
+>>>>>>> Stashed changes
             }
             // remember the current jumped height
             this.jumpCurrent = jumpCurrent + moveSpeed;
@@ -88,8 +94,11 @@ public class GameEngine {
         guy.setGuyX(guyX);
 
 
+<<<<<<< Updated upstream
 
 
+=======
+>>>>>>> Stashed changes
     }
 
     public void checkSolidBrick(){
@@ -122,9 +131,16 @@ public class GameEngine {
         }
     }
 
+<<<<<<< Updated upstream
     public void score() {
 
 
+=======
+    public void score(TextView text) {
+
+
+        text.setText(this.guyX);
+>>>>>>> Stashed changes
 
     }
 

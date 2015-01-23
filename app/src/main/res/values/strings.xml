@@ -1,3 +1,4 @@
+<<<<<<< Updated upstream
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
 
@@ -29,3 +30,35 @@
     <string name="title_activity_bluetooth_list">BluetoothList</string>
 
 </resources>
+=======
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">bs_projekt</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="action_settings">Settings</string>
+    <string name="title_activity_game_view">GameView</string>
+    <string name="button_name">Einloggen</string>
+    <string name="button_reg_name">Registrieren Sie sich!</string>
+    <string name="hint_text_user">Bitte Spielername eingeben</string>
+    <string name="hint_text_pass">Bitte Password eingeben</string>
+    <string name="hint_text_pass_2">Bitte Password wiederholen</string>
+    <string name="hint_text_email">Bitte Email eingeben</string>
+    <string name="title_activity_registration_">Registration_Activity</string>
+    <string name="button_new_game">Neues Spiel</string>
+    <string name="button_top_score">Highscore</string>
+    <string name="titel_spieler">Spielername</string>
+    <string name="titel_punkte">Punkte</string>
+    <string name="title_activity_highscores_">Highscores</string>
+    <string name="title_activity_game__view">Game_View</string>
+    <string name="title_activity_game__view2">Game_View2</string>
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="try_again">Nochmal spielen</string>
+    <string name="menue">Menü</string>
+    <string name="title_activity_user__profil">User_Profil</string>
+    <string name="title_profile">Profil</string>
+    <string name="Confirmation_Answer">Sind Sie sicher die änderungen vorzuführen?</string>
+    <string name="title_activity_background">BackgroundActivity</string>
+
+</resources>
+>>>>>>> Stashed changes

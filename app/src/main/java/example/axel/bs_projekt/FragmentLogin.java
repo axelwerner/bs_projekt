@@ -65,6 +65,7 @@ public class FragmentLogin extends Fragment implements View.OnClickListener {
             @Override
             public void onClick(View v) {
 
+<<<<<<< Updated upstream
                 ft = getActivity().getFragmentManager().beginTransaction();
                 ft.setCustomAnimations(R.anim.slide_up, R.anim.slide_down);
                 FragmentRegistration fragmentRegistration = new FragmentRegistration();
@@ -73,6 +74,16 @@ public class FragmentLogin extends Fragment implements View.OnClickListener {
 
                 //Intent intent = new Intent(getActivity(), Registration_Activity.class);
                 //startActivity(intent);
+=======
+               // ft = fm.beginTransaction();
+               // ft.setCustomAnimations(R.anim.slide_up, R.anim.slide_down);
+               // FragmentRegistration fragmentRegistration = new FragmentRegistration();
+               // ft.replace(R.id.loginLayout, fragmentRegistration);
+               // ft.commit();
+
+                Intent intent = new Intent(getActivity(), Registration_Activity.class);
+                startActivity(intent);
+>>>>>>> Stashed changes
 
             }
         });
@@ -117,7 +128,11 @@ public class FragmentLogin extends Fragment implements View.OnClickListener {
                 id_username  = cursor.getInt(cursor.getColumnIndex(SQLiteManager.ID));
                 singleton.setPassword(cursor.getString(cursor.getColumnIndex(SQLiteManager.PASSWORD)));
                 singleton.setEmail(cursor.getString(cursor.getColumnIndex(SQLiteManager.EMAIL)));
+<<<<<<< Updated upstream
                 singleton.setImage_profile(cursor.getBlob(cursor.getColumnIndex(SQLiteManager.IMAGE)));
+=======
+                //singleton.setImage_profile(cursor.getBlob(cursor.getColumnIndex(SQLiteManager.IMAGE)));
+>>>>>>> Stashed changes
 
            } while (cursor.moveToNext());
         }

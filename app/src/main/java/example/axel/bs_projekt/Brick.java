@@ -1,5 +1,8 @@
 package example.axel.bs_projekt;
-
+//hallo axel test
+//hallo axel test
+//hallo axel test
+//hallo axel testdf
 import android.content.res.Resources;
 import android.graphics.Bitmap;
 import android.graphics.BitmapFactory;
